@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MREC CANTEEN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ababab;
+        }
+
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-section {
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ff5c5c;
+            padding: 50px 0;
+        }
+
+        .menu-item img {
+            max-width: 300px;
+            max-height: 300px;
+            margin-right: 50px;
+            border-radius: 5px;
+        }
+
+
+
+    
+        @media (max-width: 600px) {
+            .menu-item img {
+                display: none;
+            }
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #969696;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .order-summary {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #000000;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MREC Canteen</h1>
+    </header>
+
+    <nav>
+        <a href="#veg">Vegetarian</a>
+        <a href="#nonveg">Non-Vegetarian</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Feed-back</a>
+    </nav>
+
+    <div class="container menu-section" id="veg">
+
+        <h2>Vegetarian Menu</h2>
+
+        <!--Veg biryani-->
+        <div class="menu-item">
+            <img src="c:\Users\user\Desktop\final internship project\paneer biryani.jpg" alt="Veggie Burger">
+            <div>
+                <span>Veg Biryani</span>
+                <span>299 Rs</span>
+                <label for="quantity_veg_burger">Quantity:</label>
+                <input type="number" id="quantity_veg_burger" name="quantity_veg_burger" value="0" min="0">
+                <button class="order-btn" data-item="Veggie Burger" data-price="5.99">Order</button>
+            </div>
+        </div>
+
+            <!--Veg noodles-->
+        <div class="menu-item">
+            <img src="c:\Users\user\Desktop\final internship project\veg noodles.jpeg" alt="Veggie Burger">
+            <div>
+                <span>Veg Noodles</span>
+                <span>99 Rs</span>
+                <label for="quantity_veg_burger">Quantity:</label>
+                <input type="number" id="quantity_veg_burger" name="quantity_veg_burger" value="0" min="0">
+                <button class="order-btn" data-item="Veggie Burger" data-price="5.99">Order</button>
+            </div>
+        </div>
+
+                    <!--Kaju paneer-->
+            <div class="menu-item">
+                <img src="c:\Users\user\Desktop\final internship project\kaju paneer.jpeg" alt="Veggie Burger">
+                <div>
+                      <span>Kaju Paneer</span>
+                        <span>150 Rs</span>
+                        <label for="quantity_veg_burger">Quantity:</label>
+                        <input type="number" id="quantity_veg_burger" name="quantity_veg_burger" value="0" min="0">
+                        <button class="order-btn" data-item="Veggie Burger" data-price="5.99">Order</button>
+                </div>
+                    </div>
+
+
+        <!-- ... (repeat similar structure for other items) -->
+    </div>
+
+    <div class="container menu-section" id="nonveg">
+        <h2>Non-Vegetarian Menu</h2>
+
+        <!--CHICKEN BIRYANI-->
+        <div class="menu-item">
+            <img src="c:\Users\user\Desktop\final internship project\chicken biryani.jpg" alt="Chicken Burger">
+            <div>
+                <span>Chicken Biryani</span>
+                <span>249 Rs</span>
+                <label for="quantity_chicken_burger">Quantity:</label>
+                <input type="number" id="quantity_chicken_burger" name="quantity_chicken_burger" value="0" min="0">
+                <button class="order-btn" data-item="Chicken Burger" data-price="6.99">Order</button>
+            </div>
+        </div>
+                <!--Chilli Chicken-->
+        <div class="menu-item">
+            <img src="c:\Users\user\Desktop\final internship project\chilli chicken.jpeg" alt="Chicken Burger">
+            <div>
+                <span>Chilli Chicken</span>
+                <span>149 Rs</span>
+                <label for="quantity_chicken_burger">Quantity:</label>
+                <input type="number" id="quantity_chicken_burger" name="quantity_chicken_burger" value="0" min="0">
+                <button class="order-btn" data-item="Chicken Burger" data-price="6.99">Order</button>
+            </div>
+        </div>
+
+            <!--CHICKEN PAROTAS-->
+        <div class="menu-item">
+            <img src="c:\Users\user\Desktop\final internship project\chicken parota.jpeg" alt="Chicken Burger">
+            <div>
+                <span>Chicken Parota</span>
+                <span>199 Rs Rs</span>
+                <label for="quantity_chicken_burger">Quantity:</label>
+                <input type="number" id="quantity_chicken_burger" name="quantity_chicken_burger" value="0" min="0">
+                <button class="order-btn" data-item="Chicken Burger" data-price="6.99">Order</button>
+            </div>
+        </div>
+        <!-- ... (repeat similar structure for other items) -->
+    </div>
+
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p>Welcome to the MREC College Canteen! We strive to provide delicious and affordable meals for students and
+            staff. 
+            *SERVING SINCE 2002*</p>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contact</h2>
+        <p>Email: mrec.canteen@gmail.com</p>
+        <p>Phone: 9912019072</p>
+
+        <form>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Your feedback..."></textarea>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <div class="container order-summary" id="order-summary">
+        <h2>Order Summary</h2>
+        <p id="order-message"></p>
+    </div>
+
+
+
+ 
+
+</body>
+
+</html>
